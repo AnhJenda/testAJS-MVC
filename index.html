@@ -11,12 +11,21 @@
 <body ng-app="myApp" ng-controller="myCtrl">
     <h3>Nhập vào số năm kinh nghiệm: </h3>
     <input type="number" ng-model="exp" id="exp"  ng-keypress="total=''"> <br>
+<<<<<<< HEAD
     <h3>Nhập vào số lương hàng tháng: </h3>
     <input type="number" ng-model="slry" id="slry"> <br><br>
     <input type ="button" value ="Calculate" ng-click ="Calc()" /><br>
     <h3>Tổng số tiền thưởng: {{bonus | currency: 'VND: '}}</h3>
     <h3>Số tiền thuế: {{tax | currency: 'VND: '}}</h3>
     <h3>Số tiền thực nhận: {{total | currency: 'VND: '}}</h3>
+=======
+    <h3>Nhập vào số lương hàng tháng (VND): </h3>
+    <input type="number" ng-model="slry" id="slry"> <br>
+    <br>
+    <input type ="button" value ="Calculate" ng-click ="Calc()" />
+    <br>
+    <h3>Số tiền thưởng: {{total | currency: 'VND: '}}</h3>
+>>>>>>> 21e5a9436cac3e096b50d7dc441cac296df1cddd
 
     <script>
         var app = angular.module('myApp', []);
